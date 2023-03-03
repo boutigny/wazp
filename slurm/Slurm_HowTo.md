@@ -1,5 +1,5 @@
 # How to use the slurm version of WaZP 
-The author of WaZp is Christophe Benoist from OCA 
+*The author of WaZp is Christophe Benoist from OCA* 
 
 In the slurm version of WaZP the main python file wazp_main.py has been split in 5 scripts corresponding to the different steps of the execution:
 
