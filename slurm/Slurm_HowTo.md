@@ -1,5 +1,8 @@
 # How to use the slurm version of WaZP 
-*The author of WaZp is Christophe Benoist from OCA* 
+*The author of WaZP is Christophe Benoist from OCA* 
+
+- Link to the original github repository from Christophe: https://github.com/linea-it/wazp
+- Link to the slurm version (forked): https://github.com/boutigny/wazp
 
 In the slurm version of WaZP the main python file wazp_main.py has been split in 5 scripts corresponding to the different steps of the execution:
 
