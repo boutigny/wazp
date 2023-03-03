@@ -28,12 +28,14 @@ A `slurm_output` directory is created in the workdir to receive the slurm excuti
 
 ## Initialization
 
-Before launching wazp_main for the first time, one needs to create links in the slurm directory:
+Before launching wazp_main for the first time, one needs to create a few links in the slurm directory:
 
 ```
 	cd slurm
 	ln -s ../data.cfg
 	ln -s ../wazp.cfg
+	ln -s ../aux
+	ln -s ../lib
 ```
 One also have to create the input_data directory which contain the galaxies and footprint catalogs (slit according to the choosen Healpix scheme)
 
