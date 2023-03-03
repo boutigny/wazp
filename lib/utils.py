@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import astropy.io.fits as fits
 import os, sys
-from astropy.cosmology.core import FlatLambdaCDM as flat
+from astropy.cosmology import FlatLambdaCDM as flat
 from astropy import units as u
 from astropy.convolution import convolve,Gaussian1DKernel
 import healpy as hp
