@@ -26,7 +26,6 @@ def slurm_submit(task, config, dconfig, workdir, tile, job_list):
             dep += f':{job}'
     cmd = f"sbatch --job-name={task}_{tile} -t 0-03:00 -n 2 --mem {slurm_mem}G -D . -L sps -o {workdir}/slurm_output/{task}-{tile}.out {dep} <<?\n"
     cmd += "#!/usr/bin/bash\n"
-    #cmd += "cd /pbs/throng/lsst/users/boutigny/wazp\n"
     cmd += "source setup.sh\n"
     cmd += f"python {task}.py {config} {dconfig} {tile}\n"
     cmd += "?"
